@@ -1,0 +1,17 @@
+# Entorno de análisis y dashboard (Python 3.13). Versiones exactas con las que se ejecutó el proyecto.
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+torch==2.15.0
+shap==0.54.1
+matplotlib==3.11.2
+seaborn==0.13.2
+joblib==1.6.0
+plotly==7.1.0
+streamlit==1.67.0
+ipykernel==7.4.0
+nbformat==5.11.1
+nbconvert==7.17.2
+pytest==9.1.1

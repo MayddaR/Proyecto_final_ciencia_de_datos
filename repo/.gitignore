@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.streamlit/secrets.toml
+.DS_Store
+
+# Artefactos pesados de los cuadernos (se regeneran); el dashboard usa models/dashboard/
+models/*.joblib
+models/*.pt

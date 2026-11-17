@@ -1,0 +1,763 @@
+{
+ "entorno": {
+  "python": "3.13.18",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "scikit-learn": "1.9.1",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "seaborn": "0.13.2",
+  "joblib": "1.6.0",
+  "ipykernel": "7.4.0"
+ },
+ "limpieza": {
+  "n_inicial": 48204,
+  "identicas": 17,
+  "horas_repetidas": 7612,
+  "distinto": {
+   "traffic_volume": 0,
+   "weather_main": 5349,
+   "temp": 78,
+   "clouds_all": 32,
+   "rain_1h": 9
+  },
+  "filas_finales": 40575,
+  "desc_antes": 35,
+  "desc_despues": 34
+ },
+ "faltantes": [
+  {
+   "index": 10079,
+   "date_time": "2014-01-31T03:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 361
+  },
+  {
+   "index": 10080,
+   "date_time": "2014-01-31T04:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 734
+  },
+  {
+   "index": 10081,
+   "date_time": "2014-01-31T05:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 2557
+  },
+  {
+   "index": 10082,
+   "date_time": "2014-01-31T06:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 5150
+  },
+  {
+   "index": 10127,
+   "date_time": "2014-02-02T03:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 291
+  },
+  {
+   "index": 10128,
+   "date_time": "2014-02-02T04:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 284
+  },
+  {
+   "index": 10129,
+   "date_time": "2014-02-02T05:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 434
+  },
+  {
+   "index": 10130,
+   "date_time": "2014-02-02T06:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 739
+  },
+  {
+   "index": 10131,
+   "date_time": "2014-02-02T07:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 962
+  },
+  {
+   "index": 10132,
+   "date_time": "2014-02-02T08:00:00.000",
+   "temp": null,
+   "rain_1h": 0.0,
+   "clouds_all": 0,
+   "weather_main": "Clear",
+   "weather_description": "sky is clear",
+   "traffic_volume": 1670
+  },
+  {
+   "index": 21224,
+   "date_time": "2016-07-11T17:00:00.000",
+   "temp": 28.96,
+   "rain_1h": null,
+   "clouds_all": 75,
+   "weather_main": "Rain",
+   "weather_description": "very heavy rain",
+   "traffic_volume": 5535
+  }
+ ],
+ "imputados": [
+  {
+   "index": 10079,
+   "date_time": "2014-01-31T03:00:00.000",
+   "temp": -7.745,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 10080,
+   "date_time": "2014-01-31T04:00:00.000",
+   "temp": -9.5,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 10081,
+   "date_time": "2014-01-31T05:00:00.000",
+   "temp": -7.73,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 10082,
+   "date_time": "2014-01-31T06:00:00.000",
+   "temp": -8.595,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 10127,
+   "date_time": "2014-02-02T03:00:00.000",
+   "temp": -9.54,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 10128,
+   "date_time": "2014-02-02T04:00:00.000",
+   "temp": -9.88,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 10129,
+   "date_time": "2014-02-02T05:00:00.000",
+   "temp": -10.12,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 10130,
+   "date_time": "2014-02-02T06:00:00.000",
+   "temp": -7.86,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 10131,
+   "date_time": "2014-02-02T07:00:00.000",
+   "temp": -10.89,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 10132,
+   "date_time": "2014-02-02T08:00:00.000",
+   "temp": -8.79,
+   "rain_1h": 0.0,
+   "weather_description": "sky is clear"
+  },
+  {
+   "index": 21224,
+   "date_time": "2016-07-11T17:00:00.000",
+   "temp": 28.96,
+   "rain_1h": 19.35,
+   "weather_description": "very heavy rain"
+  }
+ ],
+ "mediana_lluvia": 19.35,
+ "falta_por_mes": [
+  {
+   "mes": 1,
+   "% de horas sin temp": 0.1228878648
+  },
+  {
+   "mes": 2,
+   "% de horas sin temp": 0.1932989691
+  },
+  {
+   "mes": 3,
+   "% de horas sin temp": 0.0
+  },
+  {
+   "mes": 4,
+   "% de horas sin temp": 0.0
+  },
+  {
+   "mes": 5,
+   "% de horas sin temp": 0.0
+  },
+  {
+   "mes": 6,
+   "% de horas sin temp": 0.0
+  },
+  {
+   "mes": 7,
+   "% de horas sin temp": 0.0
+  },
+  {
+   "mes": 8,
+   "% de horas sin temp": 0.0
+  },
+  {
+   "mes": 9,
+   "% de horas sin temp": 0.0
+  },
+  {
+   "mes": 10,
+   "% de horas sin temp": 0.0
+  },
+  {
+   "mes": 11,
+   "% de horas sin temp": 0.0
+  },
+  {
+   "mes": 12,
+   "% de horas sin temp": 0.0
+  }
+ ],
+ "fisher": [
+  {
+   "grupo": "meses [1, 2]",
+   "% de las horas del conjunto en el grupo": 15.6722119532,
+   "faltas dentro del grupo": 10,
+   "faltas totales": 10,
+   "valor p (Fisher)": "8,9e-09"
+  },
+  {
+   "grupo": "horas [3, 4, 5, 6, 7, 8]",
+   "% de las horas del conjunto en el grupo": 24.8946395564,
+   "faltas dentro del grupo": 10,
+   "faltas totales": 10,
+   "valor p (Fisher)": "9,1e-07"
+  }
+ ],
+ "cobertura_anual": [
+  {
+   "año": 2012,
+   "horas esperadas": 2175,
+   "horas ausentes": 72,
+   "% ausente": 3.3103448276
+  },
+  {
+   "año": 2013,
+   "horas esperadas": 8760,
+   "horas ausentes": 1466,
+   "% ausente": 16.7351598174
+  },
+  {
+   "año": 2014,
+   "horas esperadas": 8760,
+   "horas ausentes": 4259,
+   "% ausente": 48.6187214612
+  },
+  {
+   "año": 2015,
+   "horas esperadas": 8760,
+   "horas ausentes": 5167,
+   "% ausente": 58.9840182648
+  },
+  {
+   "año": 2016,
+   "horas esperadas": 8784,
+   "horas ausentes": 946,
+   "% ausente": 10.7695810565
+  },
+  {
+   "año": 2017,
+   "horas esperadas": 8760,
+   "horas ausentes": 47,
+   "% ausente": 0.5365296804
+  },
+  {
+   "año": 2018,
+   "horas esperadas": 6552,
+   "horas ausentes": 19,
+   "% ausente": 0.28998779
+  }
+ ],
+ "bloques_resumen": [
+  {
+   "duración": "24 h o más",
+   "bloques": 12,
+   "horas": 8210,
+   "% de horas ausentes": 68.5537742151
+  },
+  {
+   "duración": "menos de 24 h",
+   "bloques": 2576,
+   "horas": 3766,
+   "% de horas ausentes": 31.4462257849
+  }
+ ],
+ "bloques_top": [
+  {
+   "index": 0,
+   "inicio": "2014-08-08T02:00:00.000",
+   "fin": "2015-06-11T19:00:00.000",
+   "horas": 7386,
+   "días": 307.75
+  },
+  {
+   "index": 1,
+   "inicio": "2013-10-27T02:00:00.000",
+   "fin": "2013-11-06T03:00:00.000",
+   "horas": 242,
+   "días": 10.0833333333
+  },
+  {
+   "index": 2,
+   "inicio": "2015-06-14T21:00:00.000",
+   "fin": "2015-06-19T17:00:00.000",
+   "horas": 117,
+   "días": 4.875
+  },
+  {
+   "index": 3,
+   "inicio": "2014-04-29T09:00:00.000",
+   "fin": "2014-05-04T04:00:00.000",
+   "horas": 116,
+   "días": 4.8333333333
+  },
+  {
+   "index": 4,
+   "inicio": "2015-10-23T12:00:00.000",
+   "fin": "2015-10-27T07:00:00.000",
+   "horas": 92,
+   "días": 3.8333333333
+  }
+ ],
+ "bloques_una_hora": 2192,
+ "huecos_cortos": [
+  {
+   "año": 2012,
+   "horas ausentes en huecos cortos": 72
+  },
+  {
+   "año": 2013,
+   "horas ausentes en huecos cortos": 1125
+  },
+  {
+   "año": 2014,
+   "horas ausentes en huecos cortos": 545
+  },
+  {
+   "año": 2015,
+   "horas ausentes en huecos cortos": 1012
+  },
+  {
+   "año": 2016,
+   "horas ausentes en huecos cortos": 946
+  },
+  {
+   "año": 2017,
+   "horas ausentes en huecos cortos": 47
+  },
+  {
+   "año": 2018,
+   "horas ausentes en huecos cortos": 19
+  }
+ ],
+ "festivos": {
+  "horas_holiday": 53,
+  "horas_es_festivo": 1203,
+  "promedio": [
+   {
+    "es_festivo": 0,
+    "tráfico promedio (vehículos/h)": 3313.0138677233
+   },
+   {
+    "es_festivo": 1,
+    "tráfico promedio (vehículos/h)": 2558.7373233583
+   }
+  ],
+  "federales_con_datos": 51,
+  "federales_sin_marca": [
+   {
+    "index": 0,
+    "fecha": "2013-01-21",
+    "día": "Monday",
+    "horas disponibles ese día": 20,
+    "tráfico medio ese día": 2645.55
+   },
+   {
+    "index": 1,
+    "fecha": "2014-07-04",
+    "día": "Friday",
+    "horas disponibles ese día": 20,
+    "tráfico medio ese día": 2515.5
+   },
+   {
+    "index": 2,
+    "fecha": "2016-01-18",
+    "día": "Monday",
+    "horas disponibles ese día": 14,
+    "tráfico medio ese día": 3087.0714285714
+   }
+  ],
+  "horas_sin_marca": 54
+ },
+ "particion": [
+  {
+   "index": "entrenamiento",
+   "filas": 28402,
+   "% del total": 69.9987677141,
+   "% bajo": 27.1847053024,
+   "% medio": 37.0431659742,
+   "% alto": 35.7721287233
+  },
+  {
+   "index": "validación",
+   "filas": 6086,
+   "% del total": 14.9993838571,
+   "% bajo": 27.1935589878,
+   "% medio": 37.0358199146,
+   "% alto": 35.7706210976
+  },
+  {
+   "index": "prueba",
+   "filas": 6087,
+   "% del total": 15.0018484288,
+   "% bajo": 27.1726630524,
+   "% medio": 37.046163956,
+   "% alto": 35.7811729916
+  }
+ ],
+ "razon_clases": 1.3626473254759746,
+ "atipicos": [
+  {
+   "index": "temp",
+   "atípicos IQR": 0,
+   "% atípicos": 0.0,
+   "asimetría": -0.3726766142
+  },
+  {
+   "index": "rain_1h",
+   "atípicos IQR": 1425,
+   "% atípicos": 5.0172523062,
+   "asimetría": 19.2791300882
+  },
+  {
+   "index": "snow_1h",
+   "atípicos IQR": 18,
+   "% atípicos": 0.0633758186,
+   "asimetría": 71.2031838361
+  },
+  {
+   "index": "clouds_all",
+   "atípicos IQR": 0,
+   "% atípicos": 0.0,
+   "asimetría": 0.0268430306
+  },
+  {
+   "index": "traffic_volume",
+   "atípicos IQR": 0,
+   "% atípicos": 0.0,
+   "asimetría": -0.1068525559
+  }
+ ],
+ "asimetria_log": [
+  {
+   "index": "rain_1h",
+   "asimetría original": 19.2791300882,
+   "asimetría con log(1 + x)": 8.2711254788
+  },
+  {
+   "index": "snow_1h",
+   "asimetría original": 71.2031838361,
+   "asimetría con log(1 + x)": 67.3399019378
+  }
+ ],
+ "dias_trafico_bajo": 10,
+ "bajos_top": [
+  {
+   "date_time": "2016-07-23T00:00:00.000",
+   "horas": 12
+  },
+  {
+   "date_time": "2016-07-24T00:00:00.000",
+   "horas": 5
+  },
+  {
+   "date_time": "2016-07-09T00:00:00.000",
+   "horas": 3
+  },
+  {
+   "date_time": "2016-09-01T00:00:00.000",
+   "horas": 2
+  },
+  {
+   "date_time": "2016-09-08T00:00:00.000",
+   "horas": 1
+  }
+ ],
+ "n_columnas_transformadas": 58,
+ "infrecuentes": {
+  "weather_main": [
+   "Smoke",
+   "Squall"
+  ]
+ },
+ "auditoria_escalador": [
+  {
+   "index": "temp",
+   "media usada por el escalador (train)": 8.2024002183,
+   "media de todo el conjunto": 8.231849045,
+   "diferencia": -0.0294488267
+  },
+  {
+   "index": "clouds_all",
+   "media usada por el escalador (train)": 44.2413914513,
+   "media de todo el conjunto": 44.1991620456,
+   "diferencia": 0.0422294057
+  }
+ ],
+ "baseline": {
+  "reg": [
+   {
+    "index": "entrenamiento",
+    "RMSE": 780.0131255502,
+    "MAE": 573.4162641059,
+    "R²": 0.8455317149
+   },
+   {
+    "index": "validación",
+    "RMSE": 800.0550082684,
+    "MAE": 582.8013034609,
+    "R²": 0.838259939
+   }
+  ],
+  "clf": [
+   {
+    "index": "entrenamiento",
+    "Accuracy": 0.898633899,
+    "Precisión macro": 0.9023825183,
+    "Recall macro": 0.902918154,
+    "F1 macro": 0.9024789612
+   },
+   {
+    "index": "validación",
+    "Accuracy": 0.8876109103,
+    "Precisión macro": 0.891226779,
+    "Recall macro": 0.89191946,
+    "F1 macro": 0.8911143966
+   }
+  ],
+  "dummy_reg": [
+   {
+    "index": "Dummy (media de entrenamiento)",
+    "RMSE": 1989.3493655692,
+    "MAE": 1747.874798047,
+    "R²": -5.89e-08
+   },
+   {
+    "index": "Regresión lineal (baseline)",
+    "RMSE": 800.0550082684,
+    "MAE": 582.8013034609,
+    "R²": 0.838259939
+   }
+  ],
+  "dummy_clf": [
+   {
+    "index": "Dummy (clase mayoritaria)",
+    "Accuracy": 0.3703581991,
+    "Precisión macro": 0.123452733,
+    "Recall macro": 0.3333333333,
+    "F1 macro": 0.1801758593
+   },
+   {
+    "index": "Regresión logística (baseline)",
+    "Accuracy": 0.8876109103,
+    "Precisión macro": 0.891226779,
+    "Recall macro": 0.89191946,
+    "F1 macro": 0.8911143966
+   }
+  ],
+  "residuos": [
+   {
+    "tipo de día": "fin de semana",
+    "no": 394.4705510769,
+    "sí": -1564.9083592097
+   },
+   {
+    "tipo de día": "laboral",
+    "no": -157.1653355835,
+    "sí": 586.2108893874
+   }
+  ],
+  "cm": [
+   {
+    "index": "real bajo",
+    "pred. bajo": 1542,
+    "pred. medio": 111,
+    "pred. alto": 2
+   },
+   {
+    "index": "real medio",
+    "pred. bajo": 113,
+    "pred. medio": 1851,
+    "pred. alto": 290
+   },
+   {
+    "index": "real alto",
+    "pred. bajo": 1,
+    "pred. medio": 167,
+    "pred. alto": 2009
+   }
+  ],
+  "por_clase": [
+   {
+    "index": "bajo",
+    "precisión": 0.9311594203,
+    "recall": 0.9317220544,
+    "F1": 0.9314406524,
+    "horas": 1655
+   },
+   {
+    "index": "medio",
+    "precisión": 0.869422264,
+    "recall": 0.8212067436,
+    "F1": 0.8446269678,
+    "horas": 2254
+   },
+   {
+    "index": "alto",
+    "precisión": 0.8730986528,
+    "recall": 0.922829582,
+    "F1": 0.8972755695,
+    "horas": 2177
+   },
+   {
+    "index": "macro avg",
+    "precisión": 0.891226779,
+    "recall": 0.89191946,
+    "F1": 0.8911143966,
+    "horas": 6086
+   }
+  ]
+ },
+ "operativo": {
+  "mae_relativo_pct": 17.71674355246569,
+  "pct_error_menor_500": 55.89878409464344,
+  "pct_error_menor_1000": 84.68616496878082,
+  "pct_prediccion_negativa": 3.746302990469931,
+  "residuo_medio_mayor_6000": 832.8852077353789,
+  "asimetria_residuos": -0.7981494662734542,
+  "errores_clasificacion": 684,
+  "errores_bajo_alto": 3,
+  "pct_errores_bajo_alto": 0.43859649122807015
+ },
+ "robustez": {
+  "imputar_vs_eliminar": [
+   {
+    "index": "Entrenado imputando",
+    "R²": 0.8385624798,
+    "RMSE": 799.1985193071,
+    "F1 macro": 0.8910867544
+   },
+   {
+    "index": "Entrenado eliminando las 11 filas",
+    "R²": 0.838551626,
+    "RMSE": 799.2253848821,
+    "F1 macro": 0.8912414085
+   }
+  ],
+  "temporal": [
+   {
+    "index": "Validación aleatoria (baseline)",
+    "R²": 0.838259939,
+    "RMSE": 800.0550082684,
+    "F1 macro": 0.8911143966
+   },
+   {
+    "index": "Validación temporal (≥ 2017)",
+    "R²": 0.8471147216,
+    "RMSE": 773.8057668665,
+    "F1 macro": 0.9051747817
+   }
+  ],
+  "class_weight": [
+   {
+    "index": "Sin ponderar (baseline)",
+    "Accuracy": 0.8876109103,
+    "Precisión macro": 0.891226779,
+    "Recall macro": 0.89191946,
+    "F1 macro": 0.8911143966
+   },
+   {
+    "index": "class_weight='balanced'",
+    "Accuracy": 0.888761091,
+    "Precisión macro": 0.8920964874,
+    "Recall macro": 0.8933659437,
+    "F1 macro": 0.8921522075
+   }
+  ],
+  "ablacion": [
+   {
+    "index": "Solo clima (sin variables de calendario)",
+    "R²": 0.036621331,
+    "RMSE": 1952.5832522462,
+    "F1 macro": 0.3801524256
+   },
+   {
+    "index": "Baseline completo (clima + calendario)",
+    "R²": 0.838259939,
+    "RMSE": 800.0550082684,
+    "F1 macro": 0.8911143966
+   }
+  ],
+  "n_temporal_train": 21524,
+  "n_temporal_val": 12964
+ }
+}

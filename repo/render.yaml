@@ -1,0 +1,17 @@
+# Render Blueprint: crea el servicio web del dashboard desde este repositorio.
+services:
+  - type: web
+    name: trafico-i94-dashboard
+    runtime: python
+    plan: free                 # 512 MB de RAM, 0,1 CPU; se duerme tras 15 min sin tráfico
+    region: oregon
+    branch: main
+    buildCommand: pip install --upgrade pip && pip install -r dashboard/requirements.txt
+    startCommand: streamlit run dashboard/app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+    healthCheckPath: /_stcore/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.5
+      - key: STREAMLIT_BROWSER_GATHER_USAGE_STATS
+        value: "false"
